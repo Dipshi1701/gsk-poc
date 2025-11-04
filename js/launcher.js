@@ -134,11 +134,6 @@ const PRODUCT_CONFIG = {
       prod: 'Bexsero',
       id: 'Bexserohcp'
     },
-    'sotrovimab': {
-      src: 'Sotrovimab',
-      prod: 'Sotrovimab',
-      id: 'Sotrovimab'
-    },
     'gskoncologyondemand': {
       src: 'gskoncologyondemand',
       prod: 'default',
@@ -386,11 +381,16 @@ const PRODUCT_CONFIG = {
       particlesContainer.appendChild(particle);
     }
   }
+
+
   
 
   document.addEventListener('DOMContentLoaded', function() {
     const mountButton = document.getElementById('mount');
-    const clearButton = document.querySelector('.btn-secondary-custom');
+    const clearButton = document.getElementById('clear-reload');
+    const generateKeysButton = document.getElementById('toggle-theme');
+    const backToHomeButton = document.getElementById('back-to-home');
+
     initParticles();
     
     if (mountButton) {
@@ -402,4 +402,12 @@ const PRODUCT_CONFIG = {
         window.location.reload();
       });
     }
+    if (!generateKeysButton) { return; }
+    generateKeysButton.addEventListener('click', function() {
+      window.location.href = 'keys.html';
+    });
+    if (!backToHomeButton) { return; }
+    backToHomeButton.addEventListener('click', function() {
+      window.location.href = 'index.html';
+    });
   });

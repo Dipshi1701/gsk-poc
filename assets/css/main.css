@@ -57,7 +57,6 @@
     z-index: 1;
     max-width: 900px;
     min-height: 100vh;
-    display: flex;
     align-items: center;
     padding: 2rem 1rem;
   }
@@ -93,7 +92,7 @@
     position: absolute;
     width: 300px;
     height: 300px;
-    background-image: url("../css/image/alpha_image.png");
+    background-image: url("../images/ASI_4Color-1.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -178,6 +177,10 @@
   .label-environment::before {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d90429' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='2' y1='12' x2='22' y2='12'%3E%3C/line%3E%3Cpath d='M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z'%3E%3C/path%3E%3C/svg%3E");
   }
+
+  .label-wizard-tag::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d90429' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22V12'/%3E%3Cpath d='M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2z'/%3E%3Ccircle cx='12' cy='12' r='3'%3E%3C/circle%3E%3C/svg%3E");
+  }
   
   .form-select, .form-control {
     border: 2px solid #e2e8f0;
@@ -222,6 +225,10 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+  }
+
+  .nav-link {
+   flex :none;
   }
   
   .btn-custom::before {
